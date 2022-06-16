@@ -1,0 +1,20 @@
+.navbar {
+    margin-bottom: 0;
+}
+
+.wrap > .container {
+    padding-top: 50px;
+}
+
+.jumbotron h3 {
+    width: 100%; 
+    text-align: center; 
+    border-bottom: 1px solid #000; 
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+ 
+.jumbotron h3 span { 
+    background:#fff; 
+    padding:0 10px; 
+}
