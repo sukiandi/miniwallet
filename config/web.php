@@ -21,10 +21,13 @@ if (YII_ENV_DEV) {
 $modules['admin'] = [
     'class' => 'app\modules\admin\Admin',
 ];
+$modules['api'] = [
+    'class' => 'app\modules\api\Api',
+];
 
 return [
     'id' => 'basic',
-    'name' => 'CC Birdcage',
+    'name' => 'Wallet Service',
     'aliases' => [
         '@bower' => '/var/www/vendor/bower-asset',
         '@npm' => '/var/www/vendor/npm-asset',
@@ -139,7 +142,7 @@ return [
         ],
     ],
     'params' => [
-        'mail.from' => ['no-reply@ccbirdcage.com' => '[No-Reply] CC Bird Cage'],
+        'mail.from' => ['no-reply@example.com' => '[No-Reply]'],
         'mail.catchAll' => self::env('MAIL_CATCHALL', null),
 
         'user.passwordResetTokenExpire' => 3600,

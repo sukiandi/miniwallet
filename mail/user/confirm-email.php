@@ -8,7 +8,7 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 
-$message->setSubject('[CC Birdcage] Complete your registration!');
+$message->setSubject('Complete your registration!');
 
 $url = Url::to(['/user/confirm-email',
     'token' => $user->email_confirmation_token,

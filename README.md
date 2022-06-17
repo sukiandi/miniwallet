@@ -1,11 +1,10 @@
-Yii 2 Dockerized
-================
+## Mini Wallet API Service
 
-This is an private project built with [yii2-dockerized](https://github.com/codemix/yii2-dockerized).
+This application is built with Docker, So Please install [docker](https://docs.docker.com/get-docker/) if you didn't have one.
 
-This project is powered by Docker, So Please install docker if you didn't have one.
+----
 
-Initial Setup
+### Initial Setup
 
 Run following command:
 ```sh
@@ -20,7 +19,7 @@ docker volume create --name=mysql-data-mw
 Now you can bring up the application by:
 ```sh
 docker-compose up -d
-# Wait some seconds to let the DB container fire up ...
+# Wait some seconds to let the DB container fire up, then ...
 docker-compose exec web ./yii migrate
 ```
 
